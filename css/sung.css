@@ -1,0 +1,401 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  color: #444;
+}
+
+header,
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #555;
+  overflow-x: hidden;
+}
+
+#wrap {
+  margin: 0 auto;
+  min-width: 1200px;
+  height: 100%;
+}
+
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 70px 0 60px;
+  width: 100%;
+  height: 45%;
+  box-sizing: border-box;
+  z-index: 10;
+  /* border: 1px solid blue; */
+  margin: 0 auto;
+  display: flex;
+  /* background-color: #fff; */
+}
+
+.header h1 {
+  width: 203px;
+  height: 75px;
+  position: relative;
+  left: 100px;
+  /* border: 1px solid red; */
+}
+
+.header h1 a {
+  display: block;
+  width: 20%;
+  height: 100%;
+  /* border: 1px solid red; */
+}
+
+.header nav {
+  width: 100%;
+  height: 50px;
+  /* border: 1px solid red; */
+}
+
+.header nav ul {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
+
+.header nav ul li {
+  text-align: center;
+}
+
+.header nav ul li a {
+  margin: 20px 20px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.header nav ul li ol {
+  margin-top: 30px;
+  /* border: 1px solid red; */
+}
+
+.header nav ul li ol li {
+  display: none;
+}
+
+.header nav ul li:hover ol li {
+  display: block;
+}
+
+/**/
+
+.main {
+  position: relative;
+  display: flex;
+}
+
+.main .back {
+  width: 100%;
+  height: 920px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+}
+
+.main img {
+  width: 100%;
+  height: 920px;
+}
+
+.main .text {
+  /* border: 1px solid red; */
+  position: absolute;
+  top: 400px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+
+.main .text h2 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.main .text p {
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 30px auto;
+}
+
+/**/
+
+#se1 {
+  width: 100%;
+  height: 920px;
+  /* border: 1px solid red; */
+  background-color: #f8f0e5;
+}
+
+#se1 h2 {
+  text-align: center;
+  /* margin-top: 80px; */
+  font-size: 40px;
+  padding-top: 80px;
+  box-sizing: border-box;
+}
+
+#se1 p {
+  text-align: center;
+  text-transform: uppercase;
+  /* font-size: 20px; */
+  font-weight: bold;
+}
+
+.slider-wrapper {
+  width: 80%;
+  height: 600px;
+  /* border: 1px solid red; */
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.swipwr-wrapper {
+  display: flex;
+  width: 25%;
+  position: absolute;
+  /* border: 1px solid red; */
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #f8f0e5;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 20px;
+  height: 20px;
+  /* margin: 120px; */
+  /* border: 1px solid red; */
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  /* border: 1px solid red; */
+}
+
+.swiper-wrapper .swiper-slide h3 {
+  position: absolute;
+  width: 160px;
+  height: 50px;
+  /* border: 1px solid red; */
+  margin-top: 420px;
+}
+
+.swiper-wrapper .swiper-slide .tx1 {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  /* border: 1px solid red; */
+  margin-top: 500px;
+  font-size: 13px;
+  color: #8c8c8c;
+}
+
+/**/
+
+#se2 {
+  width: 100%;
+  height: 920px;
+  /* border: 1px solid red; */
+  /* background: #5c3a0a9d; */
+  color: #000;
+}
+
+#se2 img {
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+#se2 h1 {
+  width: 60%;
+  height: 100px;
+  margin: 100px auto;
+  /* border: 1px solid red; */
+  font-size: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#se2 p {
+  text-align: center;
+  font-size: 25px;
+}
+
+#se2 p span {
+  font-weight: bold;
+}
+
+#se2 .eoc {
+  width: 900px;
+  height: 362px;
+  margin: 100px auto;
+  /* border: 1px solid red; */
+}
+
+#se2 .eoc_list {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  position: relative;
+}
+
+#se2 .eoc .eoc_list .list {
+  padding: 40px 10px;
+}
+
+#se2 .eoc_list li {
+  width: 45%;
+  /* border: 1px solid red; */
+  background: url(../images/s21_imbg.jpg) no-repeat;
+  border-radius: 100px ;
+}
+
+#se2 .eoc .eoc_list .list1,
+#se2 .eoc .eoc_list .list2 {
+  margin-bottom: 3%;
+}
+
+#se2 .eoc_list li img {
+  display: block;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+
+.eoc_list::after {
+  content: '';
+  display: block;
+  background: url(../images/eoclogo.png) no-repeat center / 100%;
+  width: 174px;
+  height: 174px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* se3 */
+
+#se3{
+  width: 100%;
+  height: 920px;
+  background-color: #f7f5f5;
+}
+
+#se3 .tit{
+  display: flex;
+}
+
+#se3 .tit h1{
+  margin: 20px auto;
+}
+#se3 .tit span{
+  color: #000;
+  font-weight: bold;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+#se3 div{
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#se3 img{
+  width: 31%;
+  margin: 50px 20px;
+}
+
+#se3 div p{
+  width: 31%;
+  margin: 10px 20px;
+  text-align: center;
+  background-color: #693c0f;
+  /* border: 1px solid red; */
+  border-radius: 100px;
+
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+
+}
+
+
+
+footer{
+  width: 100%;
+  height: 400px;
+  background-color: #464545;
+  position: relative;
+}
+footer h1{
+  text-align: center;
+}
+footer h1 img{
+  margin-top: 20px;
+}
+footer p{
+  color: #fff;
+  text-align: center;
+  margin: 20px;
+  letter-spacing: 2px;
+}
+footer .sns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+footer .sns a {
+  margin-left: 20px;
+}
