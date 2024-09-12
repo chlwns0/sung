@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>성심당</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/sung.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <script src="lib/jquery-1.11.1.min.js"></script>
+  <script src="lib/jquery.easing.1.3.js"></script>
+  <script src="lib/jquery.bxslider.js"></script>
+  <script src="lib/swiper.min.js"></script>
+  <script>
+    $(function () {
+      var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        loop: true, // 마지막 이미지에서 처음 이미지로 순환되게 설정
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        // 이미지 크기를 동일하게 맞추기 위한 CSS 설정
+        on: {
+          init: function () {
+            // 이미지 크기 조정을 위한 함수 호출
+            adjustImageSizes();
+          },
+          resize: function () {
+            // 창 크기가 조정될 때 이미지 크기 조정을 위한 함수 호출
+            adjustImageSizes();
+          },
+        }
+      });
+
+      // 이미지 크기를 동일하게 맞추기 위한 함수 정의
+      function adjustImageSizes() {
+        var slides = document.querySelectorAll('.swiper-container .swiper-slide img');
+        slides.forEach(function (img) {
+          img.style.width = '100%';
+          img.style.height = 'auto'; // 필요한 경우 'auto' 대신 다른 값을 사용할 수 있습니다.
+        });
+      }
+    });
+  </script>
+</head>
+
+<body>
+  <div id="wrap">
+    <div class="header">
+      <h1><a href="#"><img src="img/logo.png" alt=""></a></h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">ABOUT US</a>
+            <ol>
+              <li><a href="#">회사소개</a></li>
+              <li><a href="#">연혁</a></li>
+              <li><a href="#">CI</a></li>
+              <li><a href="#">성심당이야기</a></li>
+              <li><a href="#">재무제표</a></li>
+            </ol>
+          </li>
+          <li>
+            <a href="#">OUR WAY</a>
+            <ol>
+              <li><a href="#">모두를 위한 경제</a></li>
+              <li><a href="#">무지개 프로젝트</a></li>
+              <li><a href="#">에코성심 프로젝트</a></li>
+            </ol>
+          </li>
+          <li>
+            <a href="#">BRAND</a>
+          </li>
+          <li>
+            <a href="#">MEDIA HUB</a>
+            <ol>
+              <li><a href="#">성심당 미디어</a></li>
+              <li><a href="#">커뮤니티</a></li>
+              <li><a href="#">공지사항</a></li>
+            </ol>
+          </li>
+          <li>
+            <a href="#">PRODUCT</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main">
+      <div class="back">.</div>
+      <img src="img/main.jpg" alt="">
+      <div class="text">
+        <h2>성심당은 대전의 문화입니다.</h2>
+        <p>1956년, 대전역 앞 작은 찐빵집에서 시작된 성심당은 <br>
+          대전시민의 자부심과 사랑으로 성장하여 대전을 대표하는 향토기업이 되었습니다.</p>
+        <p>우리는 가톨릭 정신을 바탕으로 지역 사회에 봉사하는 가치 있는 기업이 되며, <br>
+          '맛있는 빵, 경이로운 빵, 생명의 빵' 을 통해 '사랑의 문화' 를 이루어 가겠습니다.</p>
+      </div>
+      </img>
+    </div>
+    <section id="se1">
+      <h2>성심당 명예의 전당</h2>
+      <p>sungsimdang signature</p>
+      <div class="slider-wrapper">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/대전부르스만주.jpg" alt="">
+              <h3>대전부르스만주</h3>
+              <p class="tx1">밤.황남.검은깨.유자.호박.고구마의 6가지 재료를 손수 빚어 <br>정성을 전하는 귀한 선물</p>
+            </div>
+            <div class="swiper-slide"><img src="images/대전부르스약과.jpg" alt="">
+              <h3>대전부르스약과</h3>
+              <p class="tx1">올곧은 재료, 깨끗한 기름으로 달지 않고<br> 촉촉한 맛이 일품인 수제약과</p>
+            </div>
+            <div class="swiper-slide"><img src="images/대전부르스전병.jpg" alt="">
+              <h3>대전부르스전병</h3>
+              <p class="tx1">전통방식 그대로 한 장 한 장 구워내 고소함을 가득 담고 있는 <br>진솔한 옛맛전병</p>
+            </div>
+            <div class="swiper-slide"><img src="images/대전브루스떡.jpg" alt="">
+              <h3>대전부르스떡</h3>
+              <p class="tx1">100% 국산 통팥 국산 찹쌀에 호두를 듬뿍 넣어 <br> 성심당의 마음을 담은 대전부르스 떡</p>
+            </div>
+            <div class="swiper-slide"><img src="images/딸기밭과수원길.jpg" alt="">
+              <h3>딸기밭과수원길</h3>
+              <p class="tx1">시트사이 가득한 생딸기와 100% 순우유 생크림으로 만든 <br>케익부띠끄 오리지널 인기 케이크</p>
+            </div>
+            <div class="swiper-slide"><img src="images/맷돌로갈은통밀빵.jpg" alt="">
+              <h3>맷돌로갈은통밀빵</h3>
+              <p class="tx1">통밀을 직접 갈아 유기농 밀가루와 섞고 <br>고소한 호두를 듬뿍 넣은 건강한 통밀빵</p>
+            </div>
+            <div class="swiper-slide"><img src="images/명란바게트.jpg" alt="">
+              <h3>명란바게트</h3>
+              <p class="tx1">한국 최고의 명장이 만든 덕화명란을 가득 채운 빠삭한 바게트</p>
+            </div>
+            <div class="swiper-slide"><img src="images/보문산메아리.jpg" alt="">
+              <h3>보문산메아리</h3>
+              <p class="tx1">촉촉한 페스츄리가 돌돌 말려 보문산의 메아리가 된 <br> 대전 시민을 위한 빵</p>
+            </div>
+            <div class="swiper-slide"><img src="images/순도99.99.jpg" alt="">
+              <h3>순도99.99</h3>
+              <p class="tx1">한국조폐공사 X 성심당이 순금의 고귀함과 <br>향토기업 성심당의 순정을 담은 피낭시에</p>
+            </div>
+            <div class="swiper-slide"><img src="images/순수롤.jpg" alt="">
+              <h3>순수롤</h3>
+              <p class="tx1">부드러운 카스테라와 순우유 생크림의 클래식한 조화. <br>성심당 케익부띠끄 시그니쳐</p>
+            </div>
+            <div class="swiper-slide"><img src="images/순수마들렌.jpg" alt="">
+              <h3>순수마들렌</h3>
+              <p class="tx1">우유 듬뿍. 콩 두알의 매력에 순수함까지 담아 <br>보들보들한 모든이의 간식 </p>
+            </div>
+            <div class="swiper-slide"><img src="images/튀김소보로.jpg" alt="">
+              <h3>튀김소보로</h3>
+              <p class="tx1">1980년 탄생한 소보로, 앙금빵, 도넛의 3단 합체빵 <br>성심당 NO.1</p>
+            </div>
+          </div>
+        </div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+    <section id="se2">
+      <h1><img src="images/eoc.png" alt="">모두를 위한 경제</h1>
+      <p>1999년, 성심당은 모두를 위한경제 <span>EoC(Economy of Communion)</span>를 만나 <br>사랑과 나눔의 경영방식을 이루어 가고 있습니다.</p>
+      <div class="eoc">
+        <ul class="eoc_list">
+          <li class="list list1">
+            <img src="images/s21_img1.png" alt="">
+            <p>인간중심의 경제</p>
+          </li>
+          <li class="list list2">
+            <img src="images/s21_img2.png" alt="">
+            <p>사랑과 나눔의 경제</p>
+          </li>
+          <li class="list list3">
+            <img src="images/s21_img3.png" alt="">
+            <p>공동선을 실현하는 주체</p>
+          </li>
+          <li class="list list4">
+            <img src="images/s21_img4.png" alt="">
+            <p>가난에 대한 사회적 책임</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="se3">
+      <div class="tit">
+        <h1>성심당을 전국 어디서나 만나보세요<br>
+        <span>아래 제품을 참고해 전화주문 해주세요.</span>
+      </h1>
+      </div>
+      <div>
+        <img src="images/se1.png" alt="">
+        <img src="images/se2.png" alt="">
+        <img src="images/se3.png" alt="">
+      </div>
+      <div>
+        <p>ONLY 대전</p>
+        <p>전국 배송</p>
+        <p>선물용 제품</p>
+      </div>
+    </section>
+
+    <footer>
+      <h1><img src="img/logo.png" alt=""></h1>
+      <p>개인정보처리방침 | 이용약관</p>
+      <p>로쏘 주식회사 | 대표 : 임영진 <br> 사업자등록번호. 305-81-48738 | 주소. 대전광역시 중구 대종로 480번길 15 </p>
+      <p>Tel. 1588-8069 <br> Fax. (042) 257-2984 <br> E-mail. bread@sungsimdang.co.kr</p>
+      <div class="sns">
+        <a href=""><img src="images/footer_01.png" alt=""></a>
+        <a href="https://www.facebook.com/sungsimdang4114"><img src="images/footer_02.png" alt=""></a>
+        <a href="https://www.instagram.com/sungsimdang_official/"><img src="images/footer_03.png" alt=""></a>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
